@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+  box-sizing: border-box;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  background: rgba(29, 35, 44, 0.9);
+  height: 80px;
+  z-index: 999;
+}
+
+.header a {
+  display: inline;
+  line-height: 80px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.header-logo {
+  position: absolute;
+  top: 0;
+  left: 1%;
+  font-size: 56px;
+  font-weight: 400;
+}
+
+.header-logo span {
+  color: #08b1b3;
+}
+
+.header-navlink {
+  position: absolute;
+  top: 0;
+  right: 3%;
+}
+
+.header-navlink a {
+    position: relative;
+    padding: 0 15px;
+    padding-bottom: 10px;
+    margin-left: 25px;
+    border-bottom: 2px solid #ffffff;
+    font-size: 18px;
+    transition: 0.3s all;
+}
+
+.header-navlink a:hover {
+    color: #000;
+}
+
+.header-navlink a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 0;
+    width: 100%;
+    background: #ffffff;
+    transition: 0.3s all;
+    z-index: -1;
+}
+
+.header-navlink a:hover::before{
+    height: 130%;
+}
+
+.carousel {
+  position: relative;
+  background: url(./img/b1.jpg) no-repeat;
+  height: 850px;
+}
+
+.carousel-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #ffffff;
+}
+
+.carousel-content h1 {
+  font-size: 62px;
+  margin-bottom: 20px;
+}
+
+.carousel-content p {
+    font-size: 20px;
+}
